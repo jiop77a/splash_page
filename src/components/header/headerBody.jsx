@@ -9,7 +9,7 @@ const backgroundStyle = {
   background: `url(${hero})`,
   backgroundSize: "contain",
   backgroundRepeat: 'no-repeat',
-  paddingTop: "60.31%"
+  paddingTop: "57.43%"
 };
 
 const headerBody = () => (
@@ -17,6 +17,10 @@ const headerBody = () => (
     style={backgroundStyle} className="header-main">
     <img src={headerGraphic}></img>
     <InterestForm></InterestForm>
+    <div
+      className='company-tag'>
+      Companies using Piazza Careers:
+    </div>
   </div>
 );
 

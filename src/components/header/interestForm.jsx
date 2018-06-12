@@ -12,7 +12,9 @@ class InterestForm extends Component {
   }
 
   handleSubmit(e) {
-
+    e.preventDefault();
+    console.log(this.state);
+    alert(`Thanks for your interest, ${this.state.name}!`)
   }
 
   update(property) {
@@ -21,7 +23,10 @@ class InterestForm extends Component {
 
   render() {
     return (
-      <form className="interest-form">
+      <form
+        className="interest-form"
+        onSubmit={this.handleSubmit}
+        >
         <label>Interested Student?</label>
         <div className="name-and-school">
           <input
@@ -45,10 +50,14 @@ class InterestForm extends Component {
         <button
           className="interest-button">Interested Student
         </button>
-        <span
-          onClick={()=> console.log('link to some other form')}>
-          Interested Company?
-        </span>
+        <div>
+          <span
+            className="company-link"
+            onClick={()=> console.log('link to some other form')}>
+            Interested Company?
+          </span>
+          <span></span>
+        </div>
       </form>
     );
   }
