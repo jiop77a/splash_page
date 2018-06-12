@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-
+import logo from '../../images/logo.png';
 
 const Header = () => (
-  <div>
-    I am a Header
+  <div className='logo-bar'>
+      <img src={logo}></img>
   </div>
 );
 
