@@ -1,6 +1,105 @@
-$background: #2e424f;
+$background: #2e424a;
+$grey: #eef1f6;
+$button1: #29af70;
+$button2: #35a370;
 
-.logo-bar {
+.logo-top {
   width: 100%;
   background-color: $background;
+  img {
+    max-width: 15%;
+    padding-top: 1%;
+    padding-left: 2%;
+  }
+}
+
+.header-main {
+  position: relative;
+  img {
+    max-width: 56%;
+    position: absolute;
+    top: 5%;
+    left: 2%;
+  }
+  form {
+    font-family: sans-serif;
+    margin-left: 2%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    position: absolute;
+    height: 34%;
+    bottom: 10%;
+    border-radius: 5px;
+    background-color: rgba(128,128,128,0.2);
+
+    input, button {
+      height: 40px;
+      border-radius: 5px;
+    }
+
+    input {
+      border: 1px solid darkgrey;
+      padding: 0;
+      padding-left: 10px;
+      font-size: 18px
+    }
+
+    input::placeholder {
+      font-weight: 100;
+      color: lightgrey;
+    }
+
+    label, span {
+      color: dimgrey;
+      margin-bottom: 1%;
+      margin-top: 1%;
+    }
+
+    label {
+      font-size: 17px;
+    }
+
+    span {
+      font-size: 16px;
+    }
+
+    .name-and-school {
+      display: flex;
+      flex-direction: row;
+      input {
+        width: 50%;
+        box-sizing: border-box;
+      }
+      input:last-of-type {
+        margin-left: 10px;
+      }
+    }
+
+    .email {
+      input {
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+
+    button {
+      background: linear-gradient($button1, $button2);
+      color: white;
+      font-size: 18px;
+      border: 0px;
+      font-weight: 500;
+    }
+  }
+}
+
+.logos-bottom {
+  img {
+    max-width: 100%;
+    border: 5px solid $grey;
+    border-left: 0;
+    border-right: 0;
+  }
 }

@@ -1,3 +1,70 @@
-.logo-bar {
+.logo-top {
   width: 100%;
-  background-color: #2e424f; }
+  background-color: #2e424a; }
+  .logo-top img {
+    max-width: 15%;
+    padding-top: 1%;
+    padding-left: 2%; }
+
+.header-main {
+  position: relative; }
+  .header-main img {
+    max-width: 56%;
+    position: absolute;
+    top: 5%;
+    left: 2%; }
+  .header-main form {
+    font-family: sans-serif;
+    margin-left: 2%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    position: absolute;
+    height: 34%;
+    bottom: 10%;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.2); }
+    .header-main form input, .header-main form button {
+      height: 40px;
+      border-radius: 5px; }
+    .header-main form input {
+      border: 1px solid darkgrey;
+      padding: 0;
+      padding-left: 10px;
+      font-size: 18px; }
+    .header-main form input::placeholder {
+      font-weight: 100;
+      color: lightgrey; }
+    .header-main form label, .header-main form span {
+      color: dimgrey;
+      margin-bottom: 1%;
+      margin-top: 1%; }
+    .header-main form label {
+      font-size: 17px; }
+    .header-main form span {
+      font-size: 16px; }
+    .header-main form .name-and-school {
+      display: flex;
+      flex-direction: row; }
+      .header-main form .name-and-school input {
+        width: 50%;
+        box-sizing: border-box; }
+      .header-main form .name-and-school input:last-of-type {
+        margin-left: 10px; }
+    .header-main form .email input {
+      width: 100%;
+      box-sizing: border-box; }
+    .header-main form button {
+      background: linear-gradient(#29af70, #35a370);
+      color: white;
+      font-size: 18px;
+      border: 0px;
+      font-weight: 500; }
+
+.logos-bottom img {
+  max-width: 100%;
+  border: 5px solid #eef1f6;
+  border-left: 0;
+  border-right: 0; }
