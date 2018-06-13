@@ -260,7 +260,8 @@ body {
   .advantage {
     display: flex;
     flex-direction: row;
-    min-height: 200px;
+    min-height: 220px;
+    align-items: center;
 
     &:nth-child(even) {
       background: $grey;

@@ -204,7 +204,8 @@ body {
   .advantage-list .advantage {
     display: flex;
     flex-direction: row;
-    min-height: 200px; }
+    min-height: 220px;
+    align-items: center; }
     .advantage-list .advantage:nth-child(even) {
       background: #eef1f6; }
     .advantage-list .advantage img {
