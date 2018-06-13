@@ -13,22 +13,58 @@ button {
   text-decoration: none;
   color: inherit; }
 
+body {
+  min-width: 400px; }
+
 .logo-top {
   width: 100%;
-  background-color: #2e424a; }
+  background-color: #2e424a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
   .logo-top img {
     max-width: 13%;
     padding-top: 10px;
     padding-bottom: 4px;
     padding-left: 2%; }
+  .logo-top .small-links {
+    color: white; }
+    @media (min-width: 450px) {
+      .logo-top .small-links {
+        display: none; } }
+    .logo-top .small-links a {
+      margin-right: 10px;
+      font-size: 12px; }
+      .logo-top .small-links a:hover {
+        cursor: pointer;
+        border-bottom: 2px solid white; }
 
 .header-main {
   position: relative; }
+  @media (max-width: 900px) {
+    .header-main {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
+  @media (max-width: 900px) and (max-width: 800px) {
+    .header-main {
+      display: inherit; } }
   .header-main img {
     max-width: 56%;
     position: absolute;
     top: 5%;
-    left: 2%; }
+    left: 2%;
+    transition: left 2s; }
+    @media (max-width: 900px) {
+      .header-main img {
+        left: calc(50% - 200px); } }
+  @media (max-width: 900px) and (max-width: 800px) {
+    .header-main img {
+      display: none; } }
+  @media (max-width: 900px) and (max-width: 800px) and (max-width: 450px) {
+    .header-main img {
+      display: inherit;
+      max-width: 80%; } }
   .header-main form {
     font-family: Helvetica;
     margin-left: 2%;
@@ -43,7 +79,22 @@ button {
     border-radius: 5px;
     background-color: rgba(128, 128, 146, 0.2);
     max-height: 225px;
-    min-height: 200px; }
+    min-height: 200px;
+    min-width: 300px;
+    transition: bottom 2s; }
+    @media (max-width: 900px) {
+      .header-main form {
+        bottom: 9%; } }
+  @media (max-width: 900px) and (max-width: 800px) {
+    .header-main form {
+      bottom: 45%; } }
+  @media (max-width: 900px) and (max-width: 800px) and (max-width: 700px) {
+    .header-main form {
+      left: calc(50% - 150px);
+      top: 10%; } }
+  @media (max-width: 900px) and (max-width: 800px) and (max-width: 700px) and (max-width: 450px) {
+    .header-main form {
+      display: none; } }
     .header-main form input, .header-main form button {
       height: 44px;
       border-radius: 5px; }
@@ -92,6 +143,18 @@ button {
     bottom: 2%;
     color: dimgrey;
     font-size: 19px; }
+    @media (max-width: 900px) {
+      .header-main .company-tag {
+        font-size: 17px; } }
+  @media (max-width: 900px) and (max-width: 800px) {
+    .header-main .company-tag {
+      font-size: 15px; } }
+  @media (max-width: 900px) and (max-width: 800px) and (max-width: 700px) {
+    .header-main .company-tag {
+      font-size: 14px; } }
+  @media (max-width: 900px) and (max-width: 800px) and (max-width: 700px) and (max-width: 450px) {
+    .header-main .company-tag {
+      font-size: 10px; } }
 
 .logos-bottom img {
   max-width: 100%;
@@ -131,6 +194,9 @@ button {
   .advantage-bar .border {
     background: radial-gradient(lightgrey 5%, grey 15%, #2e424a 60%);
     width: 10px; }
+  @media (max-width: 900px) {
+    .advantage-bar {
+      display: none; } }
 
 .advantage-list {
   display: flex;
@@ -144,14 +210,19 @@ button {
     .advantage-list .advantage img {
       max-height: 160px;
       padding: 0px 40px; }
+      @media (max-width: 700px) {
+        .advantage-list .advantage img {
+          padding: 0px 20px; } }
+  @media (max-width: 700px) and (max-width: 450px) {
+    .advantage-list .advantage img {
+      padding: 0px 10px; } }
     .advantage-list .advantage .content {
       display: flex;
       flex-direction: column;
       color: #2e424a;
       font-size: 12px;
       font-weight: 600;
-      padding-top: 20px;
-      padding-right: 80px; }
+      padding: 20px 80px 20px 0px; }
       .advantage-list .advantage .content .title {
         padding-bottom: 10px;
         font-size: 30px; }
