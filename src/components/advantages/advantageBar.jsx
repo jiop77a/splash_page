@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Advantage from './advantage';
+import {SmallAdvantage} from './advantages';
 import brandIcon from '../../images/icon1.png';
 import relatabilityIcon from '../../images/icon2.png';
 import eventIcon from '../../images/icon3.png';
@@ -19,29 +19,29 @@ const text = {
 
 const AdvantageBar = () => (
   <div className='advantage-bar'>
-    <Advantage
+    <SmallAdvantage
       title="Brand Awareness"
       image={brandIcon}>
       {text.brand}
-    </Advantage>
+    </SmallAdvantage>
     <div className='border'></div>
-    <Advantage
+    <SmallAdvantage
       title="Relatability"
       image={relatabilityIcon}>
       {text.relatability}
-    </Advantage>
+    </SmallAdvantage>
     <div className='border'></div>
-    <Advantage
+    <SmallAdvantage
       title="Event RSVP"
       image={eventIcon}>
       {text.event}
-    </Advantage>
+    </SmallAdvantage>
     <div className='border'></div>
-    <Advantage
+    <SmallAdvantage
       title="Interview Request"
       image={interviewIcon}>
       {text.interview}
-    </Advantage>
+    </SmallAdvantage>
   </div>
 );
 

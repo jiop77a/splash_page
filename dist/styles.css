@@ -2,13 +2,16 @@ html,
 body,
 ul,
 div,
+a,
 ol,
 img,
 button {
   margin: 0;
   padding: 0;
   font-family: Helvetica;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit; }
 
 .logo-top {
   width: 100%;
@@ -59,7 +62,8 @@ button {
     .header-main form .company-link {
       font-size: 17px; }
       .header-main form .company-link:hover {
-        border-bottom: 2px solid; }
+        border-bottom: 2px solid;
+        cursor: pointer; }
     .header-main form .name-and-school {
       display: flex;
       flex-direction: row; }
@@ -110,6 +114,8 @@ button {
     position: relative;
     min-height: 220px;
     min-width: 240px; }
+    .advantage-bar .advantage:hover {
+      cursor: pointer; }
     .advantage-bar .advantage .title {
       font-size: 19px;
       letter-spacing: 0.5px; }
@@ -125,3 +131,27 @@ button {
   .advantage-bar .border {
     background: radial-gradient(lightgrey 5%, grey 15%, #2e424a 60%);
     width: 10px; }
+
+.advantage-list {
+  display: flex;
+  flex-direction: column; }
+  .advantage-list .advantage {
+    display: flex;
+    flex-direction: row;
+    min-height: 200px; }
+    .advantage-list .advantage:nth-child(even) {
+      background: #eef1f6; }
+    .advantage-list .advantage img {
+      max-height: 160px;
+      padding: 0px 40px; }
+    .advantage-list .advantage .content {
+      display: flex;
+      flex-direction: column;
+      color: #2e424a;
+      font-size: 12px;
+      font-weight: 600;
+      padding-top: 20px;
+      padding-right: 80px; }
+      .advantage-list .advantage .content .title {
+        padding-bottom: 10px;
+        font-size: 30px; }

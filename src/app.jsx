@@ -7,6 +7,7 @@ const App = () => (
   <div>
     <Header></Header>
     <AdvantageBar></AdvantageBar>
+    <br></br>
     <AdvantageList></AdvantageList>
   </div>
 );

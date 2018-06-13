@@ -71,6 +71,7 @@ $button3: #377e5d;
       font-size: 17px;
       &:hover {
         border-bottom: 2px solid;
+        cursor: pointer;
       }
     }
 
@@ -142,7 +143,9 @@ $button3: #377e5d;
     min-height: 220px;
     min-width: 240px;
 
-
+    &:hover {
+      cursor: pointer;
+    }
 
     .title {
       font-size: 19px;
@@ -166,5 +169,42 @@ $button3: #377e5d;
   .border {
     background: radial-gradient(lightgrey 5%, grey 15%, $background 60%);
     width: 10px;
+  }
+}
+
+.advantage-list {
+  display: flex;
+  flex-direction: column;
+
+
+  .advantage {
+    display: flex;
+    flex-direction: row;
+    min-height: 200px;
+
+    &:nth-child(even) {
+      background: $grey;
+    }
+
+    img {
+      max-height: 160px;
+      padding: 0px 40px;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      color: $background;
+      font-size: 12px;
+      font-weight: 600;
+      padding-top: 20px;
+      padding-right: 80px;
+
+      .title {
+        padding-bottom: 10px;
+        font-size: 30px;
+      }
+    }
+
   }
 }
