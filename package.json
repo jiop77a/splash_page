@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --config ./webpack.config.js --mode development",
     "scss": "node-sass src/css/styles.scss dist/styles.css --watch",
-    "start": "npm run scss & npm run dev"
+    "start": "npm run scss & npm run dev",
+    "build": "webpack --mode production"
   },
   "author": "Alex Scott",
   "license": "ISC",
