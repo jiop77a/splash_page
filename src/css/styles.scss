@@ -11,7 +11,8 @@ $button3: #377e5d;
   background-color: $background;
   img {
     max-width: 13%;
-    padding-top: 0.5%;
+    padding-top: 10px;
+    padding-bottom: 4px;
     padding-left: 2%;
   }
 }
@@ -122,5 +123,48 @@ $button3: #377e5d;
     border-left: 0;
     border-right: 0;
     padding: 0% 2% 0% 2%;
+  }
+}
+
+.advantage-bar {
+  display: flex;
+  justify-content: space-evenly;
+
+  .advantage {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    background: $background;
+    align-items: center;
+    padding: 10px 30px;
+    height: 220px;
+    position:relative;
+    min-height: 220px;
+    min-width: 240px;
+
+
+
+    .title {
+      font-size: 19px;
+      letter-spacing: 0.5px;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 200;
+
+
+      img {
+        width: 80px;
+        padding-bottom: 7px;
+      }
+    }
+  }
+  .border {
+    background: radial-gradient(lightgrey 5%, grey 15%, $background 60%);
+    width: 10px;
   }
 }
